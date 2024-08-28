@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pole Position</title>
+    <!-- A favicon is a small image displayed next to the page title in the browser tab. -->
     <link rel="icon" type="image/x-icon" href="https://images.unsplash.com/photo-1687510624068-6b4e24540cf2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
 </head>
 <body>
@@ -40,15 +41,70 @@
     _top - Opens the document in the full body of the window 
     
     -->
+    <!-- 
+    Image Maps
+    The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
+    -->
     <map name="clickme">
         <area shape="circle" coords="75,75,75" href="https://www.netflix.com/in/" target="_blank" alt="Netflix">
     </map>
 
     <img usemap="#clickme" src="https://images.unsplash.com/photo-1724328402262-9f22f86cc478?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D" alt="tree" >
-    <!-- 
-    Image Maps
-    The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
-    -->
+    
+    <!-- Adding background image on a paragraph tag -->
     <p style="background-image: url('https://plus.unsplash.com/premium_photo-1717423160058-508ea6e11a50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D')"> Heyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</p>
+
+    <!-- TABLE -->
+
+    <table style="width: 100%;">
+        <tr>
+            <th>Country</th>
+            <th>Continent</th>
+            <th>Code</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>Asia</td>
+            <td>+91</td>
+        </tr>
+        <tr>
+            <td>Singapore</td>
+            <td>Asia</td>
+            <td>+99</td>
+        </tr>
+        <tr>
+            <td>France</td>
+            <td>Europe</td>
+            <td>+56</td>
+        </tr>
+    </table>
+
+    <!-- UNORDERED LIST -->
+
+    <ul style="list-style-type: square;">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Peach</li>
+    </ul>
+    <!-- ORDERED LIST -->
+    <ol type="i">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Peach</li>
+    </ol>
+
+    <!-- IFRAME -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pLQw0DbubdM?si=8vl3pL7goNnRHC4q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <form action="" method="GET"> <!-- action attribute define that where the input of this form will go-->
+        <label for="fname">First name</label>
+        <input type="text" name="" id="fname" placeholder="first name">
+        <label for="lname">Last name</label>
+        <input type="text" name="" id="lname" placeholder="last name">  
+        <button type="submit">Lets go</button>  
+        <button type="reset">reset</button>
+        <textarea name="note" id="" placeholder="comment"></textarea>
+        <input type="button" value="Click me">
+    </form>
 </body>
 </html>
